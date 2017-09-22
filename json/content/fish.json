@@ -1,0 +1,30 @@
+{
+	"contacts":{
+		"name":"Fast Track",
+		"domain":"fast-track.pro",
+		"domain_link":"http://fast-track.pro/",
+		"agreement_page":"agreement",
+		"copyright":"Все права защищены",
+		"email":"fast-track2017@ctogroup.ru",
+		"email_name":"fast-track2017@ctogroup.ru",
+		"phone":"+7 (495) 646 01 55",  
+		"phone_tel":"+74956460155",  
+		"address":"г.&nbsp;Москва, Измайловское шоссе&nbsp;71, стр.&nbsp;8", 
+		"inn":""
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"url-path-css":"/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img":"/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js":"/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins":"/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon"
+}

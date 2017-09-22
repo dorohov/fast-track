@@ -1,0 +1,28 @@
+<div class="modal fade {{modals_prefix}}modal" id="{{modals_id}}" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{modals_prefix}}dialog">
+		<div class="modal-body {{modals_prefix}}body bg-pattern  is--wall" >
+			<button type="button" class="btn-site  {{modals_prefix}}close  modal-close" data-dismiss="modal" aria-hidden="true">
+				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="modal-close"]]
+			</button>
+			<div class="modal-content {{modals_prefix}}content">
+				[[azbntple 
+					tpl="/src/block/site/default/page-header/group.html" 
+					header_prefix="page-header__" 
+					header_mod="is--modals  is--center"
+					header_level="h4" 
+					header="Регистрация"
+					header_small_level="div"
+					header_small="  "
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/form/fio-email.html" 
+					form_prefix="form__"
+					form_id="fro"
+					form_mod="  " 
+					form_color="  "
+					form_btn_name="Зарегистрироваться"
+				]]	
+			</div> 
+		</div>
+	</div>
+</div>

@@ -1,0 +1,57 @@
+.about-page__{	
+	&container{
+		@media @media-screen {
+			padding-bottom: 5vw; 
+		}
+	}
+	&container-reviews{
+		@media @media-screen {
+			padding-top: 5.45vw;
+		}
+	}
+}
+.about-panel__{
+	&block{}
+	&row{
+		align-items: center;
+		margin-top: -30px;
+		@media @media-screen {
+			margin-top: -55px;
+		}
+	}
+	&cols{
+		padding-top: 30px;
+		@media @media-screen {
+			padding-top: 55px;
+		}
+		&.is--cols-6{
+			@media @media-size-sm-p {
+				.makeCols(12, 12);
+			}
+		}
+		&.is--preview{
+			@media @media-size-xs-l {
+				.makeCols(6, 12);
+			}
+			@media @media-size-sm-p {
+				.makeCols(6, 12);
+			}
+			img{.brad();}
+		}		
+	}
+	&owl{
+		.brad();
+		overflow: hidden;
+	}
+	&text-block{
+		&.text__block{
+			line-height: @b-lh - 6;
+			div, p, ol, ul{margin-bottom: 10px;}
+		}
+		&.is--leftpadding{
+			@media @media-screen {
+				padding-left: 2.5vw;
+			}
+		}
+	}
+} 

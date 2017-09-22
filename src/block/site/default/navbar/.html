@@ -1,0 +1,106 @@
+<nav class="navbar {{class}}  {{navbar_mod}} opacity fixed scroll-navbar">
+	<div class="container {{navbar_prefix}}container">
+		<div class="row {{navbar_prefix}}row">
+			<div class="cols {{navbar_prefix}}cols  is--header"> 				
+				<div class="{{navbar_prefix}}header">
+					<div class="row {{navbar_prefix}}row-header ">
+						<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+							<div class="{{navbar_prefix}}hamburger">
+								<button class="{{navbar_prefix}}hamburger-btn hamburger__item" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+									<span class="hamburger__line  is--left"></span>
+									<span class="hamburger__line  is--center"></span>
+									<span class="hamburger__line  is--center-2"></span>
+									<span class="hamburger__line  is--right"></span>
+								</button>
+							</div>
+						</div>
+						<div class="cols {{navbar_prefix}}cols-header  is--brand">
+							<a class="{{navbar_prefix}}brand" href="/">
+								<img src="{{url-path-img}}/default/logotip-navbar.png" alt="">
+							</a>
+						</div>						
+						<div class="cols {{navbar_prefix}}cols-header  is--tel">
+							[[azbntple 
+								tpl="/src/block/site/default/button/button-modal-icon.html"
+								button_prefix="btn__" 
+								button_mod="is--icon"
+								button_target="modal-enter"
+								button_icon="login"
+							]]	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{navbar_prefix}}cols  is--collapse">
+				<div class="{{navbar_prefix}}collapse" >
+					<div class="{{navbar_prefix}}collapse-inner">
+						<div class="row {{navbar_prefix}}collapse-row">
+							<div class="cols {{navbar_prefix}}collapse-cols  is--nav">
+								<ul class="{{navbar_prefix}}nav  is--nav">
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Новости"
+										navbar_link="/news.html"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Обучение Online"
+										navbar_link="##"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Школа пациентов"
+										navbar_link="##"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="О нас"
+										navbar_link="##"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Форум"
+										navbar_link="##"
+										navbar_mod="  " 
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Партнеры"
+										navbar_link="##"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Контакты"
+										navbar_link="/contacts.html" 
+										navbar_mod="  "
+									]]	   
+								</ul>
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols  is--right" >	
+								[[azbntple 
+									tpl="/src/block/site/default/button/button-modal.html"
+									button_prefix="btn__" 
+									button_mod="is--xs"
+									button_target="modal-enter"
+									button_name="Войти"
+								]]								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

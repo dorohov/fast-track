@@ -1,0 +1,53 @@
+.block-hover__{ 
+	&block{
+		position: relative;
+	}
+	&item{
+		background-color: fadeout(@yellow-orange, 50%);
+		position: absolute;
+		.brad();
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: @trs-site;
+		.block-hover__block:hover &{
+			opacity: 1;
+		}
+	}
+	&icon{
+		padding: 3px;
+		border-radius: 50%;
+		border: 1px solid fadeout(@white, 60%); 
+		animation: shadow 1.2s ease-out 0s infinite running forwards;
+	}
+	&icon-inner{
+		width: 34px;
+		height: 34px;
+		padding: 10px;
+		color: @white;
+		background-color: fadeout(@white, 60%);
+		border-radius: 50%;
+		svg{
+			display: block;
+		}
+	}
+}
+@keyframes shadow {
+	from {
+		box-shadow: 0 0 0 fadeout(@white, 60%);
+		transform: scale(0);
+	}
+	80% {
+		box-shadow: 0 0 30px fadeout(@white, 60%);
+		transform: scale(1.2);
+	}
+	to {
+		box-shadow: 0 0 15px fadeout(@white, 60%);
+		transform: scale(1.2);
+	}
+}

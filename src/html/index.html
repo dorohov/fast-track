@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="is--index"     
+		]] 
+		<div class="site-wrap">
+			[[azbntple 
+				tpl="/src/block/site/page/index/header/.html"
+				block_prefix="index-header__"    
+			]]	
+			[[azbntple 
+				tpl="/src/block/site/default/page-panel/index-adv/.html" 
+				block_prefix="page-panel-adv__"
+			]]	
+			[[azbntple 
+				tpl="/src/block/site/page/index/.html"
+				prefix_block="index-page__"     
+			]]	
+			[[azbntple 
+				tpl="/src/block/site/default/footer/.html"
+				footer_prefix="footer__" 
+			]]
+		</div>	
+		[[azbntple 
+			tpl="/src/block/site/default/modals/video.html"
+			modals_prefix="modal-video__" 
+			modals_id="modal-video"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/modals/enter.html"
+			modals_prefix="modal-base__" 
+			modals_id="modal-enter"
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/validationEngine.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/response.html" ]] 
+	</body>
+</html>

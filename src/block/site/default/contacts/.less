@@ -1,0 +1,112 @@
+.contacts-panel__{
+	&block{		
+		position: relative;
+	} 
+	&text-block{
+		font-size: @b-fs - 4;
+		line-height: @b-lh - 4;
+		margin: 0 auto;
+		max-width: 960px;
+		margin-bottom: 25px;
+		@media @media-screen {
+			margin-bottom: 3vw;
+		}
+	}
+	&row{
+		margin-top: -30px;
+		@media @media-notsmart {
+			margin-top: -40px;
+		}
+		&.is--top{
+			align-items: center;
+			margin-bottom: 35px;	
+			@media @media-screen {margin-bottom: 3.2vw;}
+			@media @media-notsmart {justify-content: center;}		
+		}
+	}
+	&cols{
+		padding-top: 30px;
+		@media @media-notsmart {
+			padding-top: 40px;
+		}		
+		&.is--cols-4{}		
+		&.is--cols-5{
+		}	
+		&.is--cols-7{
+		}
+		&.is--cols-12{
+		}
+	}
+	&item{
+		
+	}
+	&item-heading{
+		font-weight: 700;
+		color: @blue;
+		font-size: @b-fs + 2;
+		line-height: @b-lh - 4;
+		margin-bottom: 5px;
+	}
+	&item-name{
+		font-weight: 400;
+		font-size: @b-fs + 2;
+		line-height: @b-lh + 2;
+		margin-bottom: 25px;
+	}
+	&item-num{
+		margin-bottom: 10px;
+		&.is--lg{
+			margin-bottom: 15px;
+		}
+	}
+	&map-item{
+		height: 500px;
+		@media @media-size-xs-p {height: 350px;}
+		@media @media-size-xs-l {height: 300px;}		
+	}
+}
+.contact-item__{
+	&item{
+		position: relative;
+		padding-left: 40px;
+		&, &:hover, &:focus{
+			color: @b-color;
+		}
+	}
+	&link{
+		display: block;
+		a[href^="mailto:"]&,
+		a[href^="tel:"]&,
+		&, &:hover, &:focus{
+			color: @b-color;
+		}
+	}
+	&icon{
+		position: absolute;
+		top: 50%; 
+		left: 0;
+		transform: translateY(-50%);
+		transition: @trs-site;
+		&.is--nobg{
+			width: 30px;
+			height: 30px;
+			color: @blue-turq;
+		}
+		&.is--round{
+			color: @white;
+			background-color: @blue-turq;
+			width: 30px;
+			height: 30px;
+			padding: 8px;
+			border-radius: 50%;
+			a.contact-item__link:hover &{
+				background-color: @b-color;
+			}
+		}
+		&.is--top{
+			top: 0;
+			transform: translateY(0);
+		}
+		svg{display: block;}
+	}
+}

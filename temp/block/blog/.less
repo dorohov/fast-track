@@ -1,0 +1,149 @@
+.blog-page__{
+	&block{}
+	&row{}
+	&cols{
+		&.is--cols-3{
+			@media @media-size-sm {
+				.makeCols(6, 12);
+			}
+		}
+	}
+}
+.blog-card__{
+	&item{
+		position: relative;
+	}
+	&preview{}
+	&preview-item{
+		min-height: 500px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		.brad();
+	}
+	&note{
+		position: absolute;
+		z-index: 5;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		background-color: @white;
+		padding: 30px 20px;
+		text-align: center;
+		.brad();
+		transition: @trs-site;
+		.blog-card__item:hover &{
+			background-color: fadeout(@white, 100%);
+		}
+	}
+	&cat{
+		display: inline-block;
+		background-color: @vine;
+		font-size: @b-fs - 4;
+		padding: 0 25px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&, &:focus, &:hover{color: @white;}
+		.blog-card__item:hover &{
+			background-color: fadeout(@white, 100%);			
+			&:hover{
+				background-color: fadeout(@white, 0%);
+				color: @b-color;
+			}
+		}
+
+	}
+	&heading{
+		a{
+			&, &:focus, &:hover{color: @b-color;}
+			.blog-card__item:hover &{
+				color: @white;
+			}
+		}
+	}
+}
+.blog-navbar__{
+	&block{
+		margin-bottom: 35px;
+		@media @media-screen {
+			margin-bottom: 3.8vw;
+		}
+	}
+	&nav{
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 600px;
+		justify-content: space-between;
+		//@media @media-size-xs-p {justify-content: center;}
+		position: relative;		
+		&::after{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			bottom: 1px;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: @b-color-a;
+			@media @media-size-xs-p {
+				display: none;
+			}
+		}
+	}
+	&item{
+		padding: 0 15px;
+		@media @media-size-xs-p {padding: 0; .makeCols(12, 12);}
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	&link{
+		display: inline-block;
+		padding: 10px 0px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			width: 0;
+			left: inherit;
+			right: 0;
+			height: 3px;
+			transition: @trs-site;
+			background-color: @b-color-a;
+			border-radius: 2px;
+		}
+		&:hover{
+			&::after{
+				width: 100%;
+				left: 0; 
+				right: inherit;
+			}
+		}
+		.blog-navbar__item.is--active &{
+			font-weight: 700;
+			font-size: @b-fs + 2;
+			cursor: default;
+			color: darken(@b-color-a, 15%);
+			&::after{
+				width: 100%;
+				left: 0; 
+				right: inherit;
+			}
+		}
+	}
+}
+.blog-card-page__{}
+.blog-panel__{
+
+}

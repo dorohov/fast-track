@@ -1,0 +1,125 @@
+.contacts-page__{
+	&block{
+		position: relative;
+	} 
+	&bg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0; 
+		right: 0;
+		@media @media-screen {
+			width: 50%;
+		}
+		@media @media-size-mdl {
+			width: 58%;
+		}
+	}
+	&row{
+		position: relative;
+		z-index: 2;
+		align-items: center;		
+		@media @media-notsmart {
+			justify-content: center;
+		}
+	}
+	&cols{
+		@media @media-size-xs {
+			//&:first-child{order: 1;}
+		}
+		&.is--btn{
+			min-width: 265px;
+		}
+		&.is--cols-6{
+			@media @media-size-sm-p{
+				.makeCols(12, 12);
+			}
+			@media @media-size-mdl {
+				&.is--heading{.makeCols(5, 12);}
+				&.is--note{.makeCols(7, 12);}
+			}
+		}
+	}
+	&heading-block{
+		position: relative;
+		@media @media-notsmart {
+			padding-top: 3vw;
+			padding-bottom: 3vw;
+		}
+		@media @media-size-sm-p {
+			padding-top: 5vw;
+			padding-bottom: 5vw;
+			max-width: 500px;
+		}
+		@media @media-size-sm-l {
+			padding-top: 7vw;
+			padding-bottom: 7vw;
+		}
+		@media @media-size-mdl {
+			padding-top: 6vw;
+			padding-bottom: 6vw;
+		}
+	}
+	&heading{
+		font-family: @b-ff;
+		font-weight: 700;
+		.calcFontSize(30, 100, 320, 1680);
+		.calcLineHeight(36, 106, 320, 1680);
+		@media @media-size-xs {
+			margin-bottom: 25px;
+		}
+		@media @media-size-mdl {
+			.calcFontSize(50, 76, 1025, 1400);
+			.calcLineHeight(56, 82, 1025, 1400);
+		}
+		margin: 0;
+	}
+	&note{
+		@media @media-screen {
+			padding-left: 5vw;
+		}
+	}
+	&btn{
+		@media @media-notsmart {
+			padding-top: 30px;
+		}
+	}
+	/*
+	&item{
+		&.is--icon{
+			position: relative;
+			padding-left: 90px;
+		}
+		&.is--text{
+			margin-bottom: 10px;
+			@media @media-screen {
+				margin-bottom: 15px;
+			}
+		}
+		@media @media-size-xs {
+			font-size: @b-fs - 2;
+		}
+	}
+	&item-icon{
+		width: 55px;
+		height: 55px;
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		transform: translateY(-50%);
+	}
+	&item-head{
+		color: @blue;
+		font-weight: 700;
+	}
+	&map{
+		@media @media-device {padding-top: 25px}
+		@media @media-screen {padding-top: 2vw;}
+	}
+	&map-item{
+		//box-shadow: 0px 18px 24px 0px rgba(0, 0, 0, 0.07);
+		@media @media-size-xs-p {height: 350px;}
+		@media @media-size-xs-l {height: 300px;}
+		@media @media-notsmart {height: 440px;}
+	}*/
+}

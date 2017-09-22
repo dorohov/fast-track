@@ -1,0 +1,144 @@
+<div class="{{block_prefix}}block">
+	[[azbntple 
+		tpl="/src/block/site/default/page-header/heading.html" 
+		header_prefix="page-header__" 
+		header_mod="is--calc  is--center"
+		header_level="h4"
+		header="Рассчитайте стоимость вашего ремонта прямо сейчас:"
+	]]
+	<form action="#" class="{{block_prefix}}tab-content azbn-valid-form">
+		<div class="{{block_prefix}}tab-pane active fade in" id="step1">
+			<div class="row {{block_prefix}}row azbn-step  is--wrap  is--gutter" data-azbn-step="1" >
+				<div class="cols {{block_prefix}}cols  is--cols-6  is--border">
+					<div class="{{block_prefix}}inner ">
+						<div class="{{block_prefix}}heading">1. Выберите тип ремонта:</div>
+						<div class="row {{block_prefix}}item-row  is--step1  is--wrap">
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Косметический"
+								]]
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Капитальный"
+								]]
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Элитный"
+								]]
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cols {{block_prefix}}cols  is--cols-6">	
+					<div class="{{block_prefix}}inner ">
+						<div class="{{block_prefix}}heading">2. Выберите площадь помещения:</div>
+						<div class="row {{block_prefix}}item-row  is--step1  is--wrap  is--gutter10">
+							<div class="cols {{block_prefix}}item-cols">
+								<label>
+									<input type="text" class="form__control  is--xs  is--area"> м<sup>2</sup>
+								</label>
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/button/button-tab.html" 
+									button_prefix="btn__"
+									button_mod="is--xs  is--white" 
+									button_href="#step2"
+									button_name="Продолжить"
+								]]
+								<span class="{{block_prefix}}item-pos">Шаг 1 из 3</span>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>			
+		</div>
+		<div class="{{block_prefix}}tab-pane fade" id="step2">
+			<div class="row {{block_prefix}}row azbn-step" data-azbn-step="2" >
+				<div class="cols {{block_prefix}}cols  is--cols-12">
+					<div class="{{block_prefix}}inner ">						
+						<div class="row {{block_prefix}}item-row  is--step2  is--wrap  is--gutter10">
+							<div class="cols {{block_prefix}}item-cols  is--heading">
+								<div class="{{block_prefix}}heading  is--nomargin">3. Выберите тип дома:</div>
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio-icon.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Новостройка"
+									form_icon="calc-item1"
+								]]
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio-icon.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Вторичное жилье"
+									form_icon="calc-item2"
+								]]
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/form/item-radio-icon.html" 
+									form_prefix="form__" 
+									form_name="o1" 
+									form_text="Загородный дом"
+									form_icon="calc-item3"
+								]]
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/button/button-tab.html" 
+									button_prefix="btn__"
+									button_mod="is--xs  is--white" 
+									button_href="#step3"
+									button_name="Продолжить"
+								]]
+								<span class="{{block_prefix}}item-pos">Шаг 2 из 3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}tab-pane fade" id="step3">
+			<div class="row {{block_prefix}}row azbn-step" data-azbn-step="3" >
+				<div class="cols {{block_prefix}}cols  is--cols-8">
+					<div class="{{block_prefix}}inner ">
+						<div class="{{block_prefix}}heading">4. Производится расчет стоимости ремонта, наш менеджер Вас подробно проконсультирует. Оставьте номер телефона для связи.</div>
+						<div class="row {{block_prefix}}item-row  is--step3  is--gutter15">
+							<div class="cols {{block_prefix}}item-cols">
+								<label class="calc-label">
+									<input type="text" class="form__control  is--xs">
+								</label>
+							</div>
+							<div class="cols {{block_prefix}}item-cols">
+								[[azbntple 
+									tpl="/src/block/site/default/button/button.html" 
+									button_prefix="btn__"
+									button_mod="is--xs is--invers" 
+									button_type="submit"
+									button_name="Отправить"
+								]]
+								<span class="{{block_prefix}}item-pos">Шаг 3 из 3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</form>
+</div> 

@@ -1,0 +1,72 @@
+<div class="{{block_prefix}}panel">	
+	<div class="{{block_prefix}}bg bg-pattern  is--wall"></div>	
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter">
+		<div class="{{block_prefix}}cols cols  is--cols-6  is--heading">	
+			<div class="{{block_prefix}}heading-block">
+				<h1 class="{{block_prefix}}heading">Cвяжитесь<br> с нами любым удобным для вас способом</h1>
+				[[azbntple 
+					tpl="/src/block/site/default/button/button-modal.html"
+					button_prefix="btn__" 
+					button_mod="is--map"
+					button_target="modal-map"
+					button_name="  "
+				]]
+			</div>
+			
+
+		</div>
+		<div class="{{block_prefix}}cols cols  is--cols-6  is--note">	
+			<div class="{{block_prefix}}note">
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+						social_href="mailto:da@yarus57.ru"
+						social_target="  "
+						social_mod="is--contacts-page"
+						social_icon="contacts-email" 
+						social_name="<span>da</span>@yarus57.ru"
+					]]
+				</div>
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-tel.html" social_prefix="social__"
+						social_href="tel:+74862508535"
+						social_href2="tel:+79534780222"
+						social_target="  "
+						social_mod="is--contacts-page"
+						social_icon="contacts-tel"
+						social_name="+7 (4862) <span>50-85-35</span>"
+						social_name2="+7 (953) <span>478-02-22</span>"
+					]]
+				</div>
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-working.html" social_prefix="social__"
+						social_mod="is--contacts-page"
+						social_icon="contacts-clock"
+						social_name="Пн-Пт: <span>с&nbsp;9:00 до&nbsp;18:00</span>"
+						social_name2="Сб-Вс: <span>выходной</span>" 
+					]]
+				</div>
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-nolink.html" social_prefix="social__"
+						social_mod="is--contacts-page"
+						social_icon="contacts-location" 
+						social_name="г.&nbsp;Орёл, <span>бульвар&nbsp;Победы&nbsp;д.6, оф.52</span>"
+					]]
+				</div>
+				<div class="{{block_prefix}}btn">					
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal-icon.html"
+						button_prefix="btn__" 
+						button_mod="is--icon"
+						button_target="modal-reviews"
+						button_icon="btn-email"
+						button_name="Напишите нам"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
