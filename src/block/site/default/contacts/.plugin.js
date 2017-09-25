@@ -5,7 +5,7 @@ function initMap() {
 	var cont = $('#' + map_container_div_id);
 	
 	var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';
-	var CMS__TPL_PATH = '';
+	var CMS__TPL_PATH = ''; 
 	
 	if(cont.length) {
 		
@@ -20,12 +20,12 @@ function initMap() {
 		};*/
 		var //iconCoordOfficeOne = {lat: 52.976698,  lng: 36.063286}, 
 			zoomMapOfficeOne = map_data.zoom,
-			styleMapOfficeOne = [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry","stylers":[{"lightness":"0"},{"saturation":"4"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#c7dae2"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7bc3e4"}]}],
+			styleMapOfficeOne = [{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}], 
 			optionsMapOfficeOne = {
 				zoom: zoomMapOfficeOne, 
 				center: new google.maps.LatLng(coordMapOfficeOne[0], coordMapOfficeOne[1]),
-				//scrollwheel: false,	
-				//styles: styleMapOfficeOne
+				//scrollwheel: false,	 
+				styles: styleMapOfficeOne
 			},
 			idOfficeOne = document.getElementById(map_container_div_id),
 			mapOfficeOne = new google.maps.Map(idOfficeOne, optionsMapOfficeOne),		
