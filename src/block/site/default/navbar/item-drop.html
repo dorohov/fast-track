@@ -1,0 +1,31 @@
+<li class="{{navbar_prefix}}nav-item dropdown  {{navbar_mod}}">
+	<a href="#" class="dropdown-toggle {{navbar_prefix}}nav-link" data-toggle="dropdown">
+		<div class="{{navbar_prefix}}nav-caret">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-dropdown" ]]
+		</div>
+		{{navbar_name}}
+	</a>
+	<ul class="{{navbar_prefix}}nav-dropdown-menu  dropdown-menu">					
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/item-drop-link.html" 
+			navbar_prefix="navbar__" 
+			navbar_mod="is--active"
+			navbar_name="Видеотека" 
+			navbar_link="##"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/item-drop-link.html" 
+			navbar_prefix="navbar__" 
+			navbar_mod="  "
+			navbar_name="Фототека" 
+			navbar_link="##"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/item-drop-link.html" 
+			navbar_prefix="navbar__" 
+			navbar_mod="  "
+			navbar_name="Библеотека" 
+			navbar_link="##"
+		]]	
+	</ul>
+</li>
