@@ -1,3 +1,30 @@
+.error-page__{
+	&block{
+		position: relative;
+	}
+	&container{
+
+	}
+	&text{
+		font-size: @b-fs + 2;
+		@media @media-screen {
+			max-width: 450px;
+		}
+	}
+}
+.index-page__{
+	&block{	
+		background-color: fadeout(@blue-turq, 70%);
+	}
+	&container{
+		padding-top: 45px;
+		padding-bottom: 45px;
+		@media @media-screen {
+		    padding-top: 5.3vw;
+		    padding-bottom: 2vw;
+		}
+	}
+}
 .advantages-panel__{
 	&block{
 		@media @media-screen {
@@ -2417,6 +2444,15 @@ textarea.form__control{
 		}
 	}
 }
+.is--nav > li{position:relative}
+.is--nav > li ul{width:100%;position:absolute;top:70px;display:inline-block;opacity:0}
+.is--nav > li:hover > ul{opacity:1;transition:all .7s}
+.is--nav > li ul > li{margin-top:20px;display:block}
+.is--nav > li ul > li > a{padding:0}
+@media (max-width: 1200px){
+	.is--nav > li ul{width:100%;opacity:0;top:5px;height:0;position:relative;display:block}
+.is--nav > li:hover > ul{opacity:1;height:auto}
+.is--nav > li ul > li{display:inline-block;margin-top:3px;margin-bottom:0}}
 .text__{
 	&container{
 		margin: 0 auto;
@@ -2596,33 +2632,6 @@ blockquote {
 	}*/
 }
 .color--blue{color: @blue;}
-.error-page__{
-	&block{
-		position: relative;
-	}
-	&container{
-
-	}
-	&text{
-		font-size: @b-fs + 2;
-		@media @media-screen {
-			max-width: 450px;
-		}
-	}
-}
-.index-page__{
-	&block{	
-		background-color: fadeout(@blue-turq, 70%);
-	}
-	&container{
-		padding-top: 45px;
-		padding-bottom: 45px;
-		@media @media-screen {
-		    padding-top: 5.3vw;
-		    padding-bottom: 2vw;
-		}
-	}
-}
 .index-header__{
 	&block{
 		position: relative;

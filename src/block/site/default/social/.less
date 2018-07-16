@@ -207,3 +207,12 @@
 		}
 	}
 }
+.is--nav > li{position:relative}
+.is--nav > li ul{width:100%;position:absolute;top:70px;display:inline-block;opacity:0}
+.is--nav > li:hover > ul{opacity:1;transition:all .7s}
+.is--nav > li ul > li{margin-top:20px;display:block}
+.is--nav > li ul > li > a{padding:0}
+@media (max-width: 1200px){
+	.is--nav > li ul{width:100%;opacity:0;top:5px;height:0;position:relative;display:block}
+.is--nav > li:hover > ul{opacity:1;height:auto}
+.is--nav > li ul > li{display:inline-block;margin-top:3px;margin-bottom:0}}
