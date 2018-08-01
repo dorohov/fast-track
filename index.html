@@ -21,90 +21,46 @@
 <link href="/css/site.css" rel="stylesheet"> 		
 	</head>
 	<body class="is--index-page"> 
-		<nav class="navbar navbar-site scroll  is--index opacity fixed scroll-navbar">
-	<div class="container navbar__container">
-		<div class="row navbar__row">
-			<div class="cols navbar__cols  is--header"> 				
-				<div class="navbar__header">
-					<div class="row navbar__row-header ">
-						<div class="cols navbar__cols-header  is--hamburger">
-							<div class="navbar__hamburger">
-								<button class="navbar__hamburger-btn hamburger__item" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
-									<span class="hamburger__line  is--left"></span>
-									<span class="hamburger__line  is--center"></span>
-									<span class="hamburger__line  is--center-2"></span>
-									<span class="hamburger__line  is--right"></span>
-								</button>
-							</div>
-						</div>
-						<div class="cols navbar__cols-header  is--brand">
-							<a class="navbar__brand" href="/">
-								<img src="/img/default/logotip-navbar.png" alt="">
-							</a>
-						</div>						
-						<div class="cols navbar__cols-header  is--tel">
-							<button type="button" class="btn__item is--icon" data-toggle="modal" data-target="#modal-enter">
-	<svg class="icon-svg icon-login" role="img">
-		<use xlink:href="/img/svg/sprite.svg#login"></use>
-	</svg>
-</button>	
-						</div>
-					</div>
-				</div>
+		<nav class="navbar-forum__block">
+	<div class="navbar-forum__container">
+		<div class="navbar-forum__row">
+			<div class="navbar-forum__cols  is--left">
+				<a class="navbar-forum__brand" href="/">
+					<img src="/img/default/logotip-navbar.png" alt="">
+				</a>
 			</div>
-			<div class="cols navbar__cols  is--collapse">
-				<div class="navbar__collapse" >
-					<div class="navbar__collapse-inner">
-						<div class="row navbar__collapse-row">
-							<div class="cols navbar__collapse-cols  is--nav">
-								<ul class="navbar__nav  is--nav">
-									<li class="navbar__nav-item    ">
-	<a href="/news.html" class="navbar__nav-link">Новости</a>  
+			<div class="navbar-forum__cols  is--center">
+				<ul class="navbar-forum__nav  is--nav">
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/events-2/" class="navbar-forum__nav-link">Новости</a>  
 </li>	
-									<li class="navbar__nav-item dropdown    ">
-	<a href="#" class="dropdown-toggle navbar__nav-link" data-toggle="dropdown">
-		<div class="navbar__nav-caret">
-			<svg class="icon-svg icon-navbar-dropdown" role="img">
-	<use xlink:href="/img/svg/sprite.svg#navbar-dropdown"></use>
-</svg>
-		</div>
-		Обучение Online
-	</a>
-	<ul class="navbar__nav-dropdown-menu  dropdown-menu">					
-		<li class="navbar__nav-dropdown-item  is--active">
-	<a href="##" class="navbar__nav-dropdown-link  is--active"><span>Видеотека</span></a>
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/online-training/" class="navbar-forum__nav-link">Академия</a>  
+</li>	
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/school-of-patients/" class="navbar-forum__nav-link">Школа пациентов</a>  
+</li>	
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/about/" class="navbar-forum__nav-link">О нас</a>  
+</li>	
+					<li class="navbar-forum__nav-item  is--active">
+	<a href="http://fast-track.pro/forum/" class="navbar-forum__nav-link">Форум</a>  
 </li>
-		<li class="navbar__nav-dropdown-item    ">
-	<a href="##" class="navbar__nav-dropdown-link    "><span>Фототека</span></a>
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/partners/" class="navbar-forum__nav-link">Партнеры</a>  
 </li>	
-		<li class="navbar__nav-dropdown-item    ">
-	<a href="##" class="navbar__nav-dropdown-link    "><span>Библеотека</span></a>
-</li>	
-	</ul>
-</li>	
-									<li class="navbar__nav-item    ">
-	<a href="##" class="navbar__nav-link">Школа пациентов</a>  
-</li>	
-									<li class="navbar__nav-item    ">
-	<a href="##" class="navbar__nav-link">О нас</a>  
-</li>	
-									<li class="navbar__nav-item    ">
-	<a href="##" class="navbar__nav-link">Форум</a>  
-</li>
-									<li class="navbar__nav-item    ">
-	<a href="##" class="navbar__nav-link">Партнеры</a>  
-</li>	
-									<li class="navbar__nav-item    ">
-	<a href="/contacts.html" class="navbar__nav-link">Контакты</a>  
+					<li class="navbar-forum__nav-item    ">
+	<a href="http://fast-track.pro/contacts/" class="navbar-forum__nav-link">Контакты</a>  
 </li>	   
-								</ul>
-							</div>
-							<div class="cols navbar__collapse-cols  is--right" >	
-								<button type="button" class="btn__item is--xs" data-toggle="modal" data-target="#modal-enter">Войти</button>								
-							</div>
-						</div>
-					</div>
-				</div>
+				</ul>
+			</div>
+			<div class="navbar-forum__cols  is--right" >	
+				<form id="search_form" class="navbar-forum__search">
+					<input type="text" name="search" value="" class="navbar-forum__search-input" placeholder="Поиск" />
+					<button type="submit" class="navbar-forum__search-btn"><svg class="icon-svg icon-search" role="img">
+	<use xlink:href="/img/svg/sprite.svg#search"></use>
+</svg></button>
+				</form>						
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,70 @@
+<nav class="{{navbar_prefix}}block">
+	<div class="{{navbar_prefix}}container">
+		<div class="{{navbar_prefix}}row">
+			<div class="{{navbar_prefix}}cols  is--left">
+				<a class="{{navbar_prefix}}brand" href="/">
+					<img src="{{url-path-img}}/default/logotip-navbar.png" alt="">
+				</a>
+			</div>
+			<div class="{{navbar_prefix}}cols  is--center">
+				<ul class="{{navbar_prefix}}nav  is--nav">
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Новости"
+						navbar_link="http://fast-track.pro/events-2/"
+						navbar_mod="  " 
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Академия"
+						navbar_link="http://fast-track.pro/online-training/"
+						navbar_mod="  " 
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Школа пациентов"
+						navbar_link="http://fast-track.pro/school-of-patients/"
+						navbar_mod="  " 
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="О нас"
+						navbar_link="http://fast-track.pro/about/"
+						navbar_mod="  " 
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Форум"
+						navbar_link="http://fast-track.pro/forum/"
+						navbar_mod="is--active" 
+					]]
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Партнеры"
+						navbar_link="http://fast-track.pro/partners/"
+						navbar_mod="  " 
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/item.html" 
+						navbar_prefix="{{navbar_prefix}}" 
+						navbar_name="Контакты"
+						navbar_link="http://fast-track.pro/contacts/" 
+						navbar_mod="  "
+					]]	   
+				</ul>
+			</div>
+			<div class="{{navbar_prefix}}cols  is--right" >	
+				<form id="search_form" class="{{navbar_prefix}}search">
+					<input type="text" name="search" value="" class="{{navbar_prefix}}search-input" placeholder="Поиск" />
+					<button type="submit" class="{{navbar_prefix}}search-btn">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="search" ]]</button>
+				</form>						
+			</div>
+		</div>
+	</div>
+</nav>
