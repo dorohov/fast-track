@@ -35,6 +35,11 @@
 				<div class="{{navbar_prefix}}collapse" >
 					<div class="{{navbar_prefix}}collapse-inner">
 						<div class="row {{navbar_prefix}}collapse-row">
+							<div class="cols {{navbar_prefix}}collapse-cols  is--brand">
+								<a class="{{navbar_prefix}}brand" href="/">
+									<img src="{{url-path-img}}/default/logotip-navbar.png" alt="">
+								</a>
+							</div>
 							<div class="cols {{navbar_prefix}}collapse-cols  is--nav">
 								<ul class="{{navbar_prefix}}nav  is--nav">
 									[[azbntple 
@@ -88,13 +93,20 @@
 									]]	   
 								</ul>
 							</div>
-							<div class="cols {{navbar_prefix}}collapse-cols  is--right" >	
+							<div class="cols {{navbar_prefix}}collapse-cols  is--btn" >	
 								[[azbntple 
 									tpl="/src/block/site/default/button/button-modal.html"
 									button_prefix="btn__" 
-									button_mod="is--xs"
+									button_mod="is--nav"
 									button_target="modal-enter"
 									button_name="Войти"
+								]]	
+								[[azbntple 
+									tpl="/src/block/site/default/button/button-modal.html"
+									button_prefix="btn__" 
+									button_mod="is--nav"
+									button_target="modal-enter"
+									button_name="Регистрация"
 								]]								
 							</div>
 						</div>

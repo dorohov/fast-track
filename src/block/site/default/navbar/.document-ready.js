@@ -1,6 +1,12 @@
 var url = window.location.href;
 $('.navbar__nav a[href="'+url+'"]').parent().addClass('is--active'); 
 $('.navbar__nav-dropdown-menu a[href="'+url+'"]').parent().addClass('is--active'); 
+$('.navbar-site [data-toggle="dropdown"]').on('click', function(e) {
+	e.preventDefault();
+	e.stopPropagation();
+	$(this).parent().siblings().removeClass('open');
+	$(this).parent().toggleClass('open');
+});
 /*
 $(function () {
 	$('body, .navbar-site .navbar__form button[type="reset"]').on('click keyup', function(event) {
