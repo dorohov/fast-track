@@ -6,7 +6,15 @@ $('.navbar-site [data-toggle="dropdown"]').on('click', function(e) {
 	e.stopPropagation();
 	$(this).parent().siblings().removeClass('open');
 	$(this).parent().toggleClass('open');
-});
+}); 
+if(!screenJS.isLG()){
+	$('.navbar-site .dropdown').on('mouseenter', function(e) {
+		$(this).addClass('open');
+	});
+	$('.navbar-site .dropdown').on('mouseleave', function(e) {
+		$(this).removeClass('open');
+	});
+}
 /*
 $(function () {
 	$('body, .navbar-site .navbar__form button[type="reset"]').on('click keyup', function(event) {

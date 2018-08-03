@@ -74,7 +74,7 @@ function fecss_ScreenJS() {
 	};
 	
 	ctrl.isLG = function() {
-		return (ctrl.screen.w > 1199  && ctrl.screen.w < 1400);
+		return (ctrl.screen.w > 1199);
 	};
 	ctrl.isXL = function() {
 		return (ctrl.screen.w > 1399  && ctrl.screen.w < 1681);
