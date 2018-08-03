@@ -1,12 +1,12 @@
 var url = window.location.href;
 $('.navbar__nav a[href="'+url+'"]').parent().addClass('is--active'); 
 $('.navbar__nav-dropdown-menu a[href="'+url+'"]').parent().addClass('is--active'); 
-$('.navbar-site [data-toggle="dropdown"]').on('click', function(e) {
+/*$('.navbar-site [data-toggle="dropdown"]').on('click', function(e) {
 	e.preventDefault();
 	e.stopPropagation();
 	$(this).parent().siblings().removeClass('open');
 	$(this).parent().toggleClass('open');
-}); 
+});*/
 if(!screenJS.isLG()){
 	$('.navbar-site .dropdown').on('mouseenter', function(e) {
 		$(this).addClass('open');
