@@ -2,11 +2,20 @@
 	<div class="{{block_prefix}}container container">
 		<div class="{{block_prefix}}row row  is--wrap  is--gutter">
 			<div class="{{block_prefix}}cols cols  is--cols-12">
-				<a href="#">
-					<img src="{{url-path-img}}/temp/banner-header-1540x440.jpg" 
-						data-src-0="https://placeholdit.imgix.net/~text?txtsize=30&txt=520x450&w=450&h=500" 
-						data-src-451="{{url-path-img}}/temp/banner-header-1540x440.jpg" alt="">
-				</a>
+				<div class="{{block_prefix}}slick" data-slider-slick="slick-header">
+					<a class="{{block_prefix}}slick-item">
+						<picture>
+							<source media="(min-width: 451px)" srcset="{{url-path-img}}/temp/banner-header-1-1540x440.jpg">
+							<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=520x450&w=450&h=500" alt="" class="img-responsive">
+						</picture>
+					</a>
+					<a class="{{block_prefix}}slick-item">
+						<picture>
+							<source media="(min-width: 451px)" srcset="{{url-path-img}}/temp/banner-header-2-1540x440.jpg">
+							<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=520x450&w=450&h=500" alt="" class="img-responsive">
+						</picture>
+					</a>
+				</div>
 			</div>
 			<div class="{{block_prefix}}cols cols  is--cols-6">				
 				[[azbntple 
