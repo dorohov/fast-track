@@ -15,6 +15,8 @@ $(function() {
 		dots: false,
 		prevArrow: prevArrow,
 		nextArrow: nextArrow,
-		fade: true
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 	});
 }); 
